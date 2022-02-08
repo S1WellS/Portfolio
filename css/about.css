@@ -1,0 +1,20 @@
+.about-section {
+    text-align: center;
+    background-color: #32408D;
+    color: #fff;
+    padding-top: 50px;
+    height: 100vh;
+
+}
+
+.about-title {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 30px;
+}

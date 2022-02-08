@@ -1,0 +1,56 @@
+.main-banner {
+    height: 100vh;
+    background-image: url('/img/Backgrounddisc.png');
+    background-size: cover;
+    padding-top: 15vh;
+}
+
+.banner-info {
+    width: 40%;
+    margin: 130px auto;
+    text-align: center;
+    color: #fff;
+}
+
+.main-title {
+    font-size: 30px;
+    text-shadow: 2px 3px black;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+}
+
+.banner-img {
+    border-radius: 5px;
+    background-color: #ED1E24;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.banner-text {
+    background-color: #32408D;
+    font-weight: bold;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.icons {
+    align-items: center;
+    padding: 6rem 0 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.icons i{
+    margin: 0 40px;
+    font-size: 40px;
+    cursor: pointer;
+    transition: all 0.25s ease-in;
+}
+
+.icons i:hover {
+    color: #3f51b3;
+}

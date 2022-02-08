@@ -1,91 +1,106 @@
 <!DOCTYPE html>
 <html>
-
     <head>
-        <title>Meu Portfólio</title>
+        <title>WellS</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width", initial-scale=1.0>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/styles.css">
+        <script src="https://kit.fontawesome.com/c56bdab1b5.js" crossorigin="anonymous"></script>
+        <!-- CSS NAVBAR -->
+        <link rel="stylesheet" href="./css/navbar.css">
+         <!-- CSS BANNER -->
+        <link rel="stylesheet" href="./css/banner.css">
+        <!-- CSS ABOUT -->
+        <link rel="stylesheet" href="./css/about.css">
+        <!-- CSS SKILLS -->
+        <link rel="stylesheet" href="./css/skills.css">
+        <!-- CSS JOBS -->
+        <link rel="stylesheet" href="./css/jobs.css">
+        <!-- CSS FOOTER -->
+        <link rel="stylesheet" href="./css/footer.css">
     </head>
 
     <body>
-
-        <!--navbar-->
-        <header id="navbar">
-            <img src="img/shuriken.png" alt="Estrela Ninja">
-            <h2>WellS</h2>
-            <nav>
-                <ul id="navbar-list">
-                    <li><a href="index.html">Sobre</a></li>
-                    <li><a href="projetos.html">Projetos</a></li>
-                    <li><a href="#">Contatos</a></li>
-                </ul>
-            </nav>
+        <!-- NAVBAR START -->
+        <header class="navbar">
+           <i class="fas fa-terminal"></i>
+                <h2 class="navbar-logo">Alexandre Samuel</h2>
+                <nav class="navbar-content">
+                    <ul class="navbar-menu">
+                        <li class="navbar-list"><a href="#sessao1" class="navbar-link">Sobre</a></li>
+                        <li class="navbar-list"><a href="#sessao2" class="navbar-link">Projetos</a></li>
+                        <li class="navbar-list"><a href="#sessao3" class="navbar-link">Contato</a></li>
+                    </ul>
+                </nav>
         </header>
-        <!--fim da navbar-->
+        <!-- NAVBAR END -->
 
         <main>
-
-            <!--banner inicio-->
-            <div id="main-banner">
-                <div id="banner-info">
-                    <h1 class="main-title">WellS</h1>
-                    <img src="img/perfilport.jpg" alt="perfil">
-                    <p>Programador Front-end</p>
+            <!-- BANNER START -->
+            <div class="main-banner">
+                <div class="banner-info">
+                    <h1 class="main-title">Alexandre Samuel</h1>
+                    <img src="img/ele.gif" alt="perfil" class="banner-img">
+                    <p class="banner-text">Programador FullStack</p>
+                    <div class="icons">
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-discord"></i>
+                        <i class="fab fa-github"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
                 </div>
             </div>
-            <!--banner final-->
+            <!-- BANNER END -->
 
-            <!--about inicio-->
-            <section id="about-section">
-                <h2>Sobre mim</h2>
-                <p>Meu nome é Alexandre Samuel, tenho 17 anos e sou estudante de programação e desenvolvedor Front-end. Me interessei por programação a cerca de 1 ano,
-                desde então fiz cursos de Front-end da Alura e trabalho em projetos pessoais.</p>
+            <!-- ABOUT START -->
+            <section class="about-section" id="sessao1">
+                <h2 class="about-title">Sobre mim</h2>
+                <p class="about-text">Meu nome é Alexandre Samuel, tenho 17 anos e sou estudante de programação. Me interessei por programação em 2021
+                desde então fiz cursos na Alura e trabalho em projetos pessoais. Venho aprendendo rápido e buscando me tornar um desenvolvedor FullStack</p>
             </section>
-            <!--about fim-->
-
+            <!-- ABOUT END -->
         </main>
 
-        <!--skils inicio-->
-        <section id="skills-section">
+        <!-- SKILLS START -->
+        <section class="skills-section">
             <div class="container">
                 <div class="skills-container">
-                    <img src="img/weapon1.png" alt="weapons">
-                    <h3>Desenvolvimento</h3>
-                    <p>Aspirante a programador Front-end</p>
+                    <img class="skills-img" src="img/weapon1.png" alt="weapons">
+                    <h3 class="skills-title">Desenvolvimento</h3>
+                    <p class="skills-content" >Aspirante a programador Front-end</p>
                     <p class="subtitle">Linguagens que quero aprender</p>
-                    <p>HTML5, CSS, JavaScript</p>
+                    <p>HTML5, CSS3, JavaScript</p>
                     <p class="subtitle">Projetos que posso desenvolver</p>
                     <p>Sites variados com HTML/CSS</p>
                 </div>
 
                 <div class="skills-container central">
-                    <img src="img/weapon2.png" alt="weapons">
-                    <h3>Criação</h3>
-                    <p>Desenvolver Softwares Complexos</p>
+                    <img class="skills-img" src="img/shuriken.png" alt="weapons">
+                    <h3 class="skills-title">Criação</h3>
+                    <p>Desenvolver Sites Responsivos</p>
                     <p class="subtitle">Cursos que eu fiz:</p>
-                    <p>HTML/CSS da Alura e criação de sites do Hora de Codar</p>
+                    <p>A grade de formação Front-end da Alura</p>
                 </div>
 
                 <div class="skills-container">
-                    <img src="img/weapon3.png" alt="weapons">
-                    <h3>Infraestrutura</h3>
-                    <p>Seus servidores mais performáticos</p>
-                    <p class="subtitle">Serviços de Cloud:</p>
-                    <p>Google Cloud, Microsoft Azure</p>
+                    <img class="skills-img" src="img/weapon3.png" alt="weapons">
+                    <h3 class="skills-title">Infraestrutura</h3>
+                    <p>Arquitetura do projeto otimizada</p>
+                    <p class="subtitle">Frameworks</p>
+                    <p>Bootstrap</p>
                     <p class="subtitle">Oque posso fazer:</p>
-                    <p>Diminuir o tempo de requisição</p>
+                    <p>Otimizar o projeto para fácil manutenção</p>
                 </div>
             </div>
         </section>
-        <!--skils fim-->
+        <!-- SKILLS END -->
 
-        <!--Jobs inicio-->
-        <section id="jobs-section">
-            <h2>Veja meus últimos trabalhos:</h2>
+        <!-- JOBS START -->
+        <section class="jobs-section" id="sessao2">
+            <h2 class="jobs-title">Veja meus últimos trabalhos:</h2>
             <p>Aqui estão os meus trabalhos mais recentes <a href="#">clique aqui</a></p>
 
             <div class="job-container">
@@ -99,23 +114,22 @@
                 <div class="job-box proj3"></div>
                 <div class="job-box proj1"></div>
             </div>
-
         </section>
-        <!--Jobs fim-->
+        <!-- JOBS END -->
 
-        <!--footer inicio-->
-        <footer>
-        <h2>Me mande uma mensagem</h2>
-        <p>Caso queira falar sobre algum projeto, me contratar para algum serviço</p>
-        <img src="img/ninja.png" alt="Ninja">
-        <form action="" method="">
+        <!-- FOOTER START -->
+        <footer class="footer" id="sessao3">
+        <h2 class="footer-title">Me mande uma mensagem</h2>
+        <p class="footer-text">Caso queira falar sobre algum projeto, me contratar para algum serviço</p>
+       <i class="fas fa-envelope-open-text"></i>
+        <form class="footer-form" action="" method="">
             <input type="text" name="name" placeholder="Seu nome">
             <input type="email" name="email" placeholder="Seu e-mail">
             <textarea name="msg" placeholder="Digite uma mensagem"></textarea>
             <input type="submit" value="Enviar" class="submit">
         </form>
-        <p>© Desenvolvido por <span class="detail">WellS</span></p>
+        <p>© Desenvolvido por <span class="detail">Alexandre Samuel</span></p>
         </footer>
-        <!--footer fim-->
+        <!-- FOOTER END -->
     </body>
 </html>
